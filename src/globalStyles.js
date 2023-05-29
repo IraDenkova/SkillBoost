@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import '@fontsource/dm-sans';
+import '@fontsource-variable/open-sans';
 
 const GlobalStyle = createGlobalStyle`
   *, 
@@ -8,12 +9,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans Variable', sans-serif;
     font-size: 14px;
     line-height: 18px;
     background-color: #EBEBEB;
     height: 100%;
     margin: 0;
+    letter-spacing: 0.03em;
   }
   ol, ul {
 	  list-style: none;
@@ -26,6 +28,9 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
     font-family: inherit;
+  }
+  p{
+    margin: 0;
   }
 `
 
